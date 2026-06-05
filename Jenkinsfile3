@@ -39,9 +39,8 @@ pipeline {
                env.DOCKER_CONFIG = '/var/jenkins_home/.docker'  
                def appmavenjenkins = docker.build("jyanezvilla/mavenjenkins:${gitcommit}", ".")
                 appmavenjenkins.push()
-              }
-            }  
+            }
           }  
-        }
+        }  
     }
 }
